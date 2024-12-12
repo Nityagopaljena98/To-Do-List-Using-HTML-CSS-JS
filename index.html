@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <!-- Link The External CSS  -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap Link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <div id="particles-js"></div>
+
+    <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>To-do App</h1>
+                <p>keep your daily task here !</p>
+                <div id="progress-bar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0/0</p>
+            </div>
+        </div>
+
+        <!-- Create a input field  -->
+        <form action="">
+            <input type="text" id="taskInput" placeholder="Write the task..." />
+            <button id="newTask" type="submit">ADD</button>
+        </form>
+        <!-- Create a task list section  -->
+        <ul id="task-list"></ul>
+    </div>
+
+
+    <!-- Link The JS File  -->
+    <script src="app.js"></script>
+    <!-- JS Confetti Link  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    <!-- Particle JS Link  -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+
+
+
+    <script>
+        particlesJS.load('particles-js', 'particles-config.json', function () {
+            console.log('particles.js loaded - callback');
+        });
+    </script>
+
+</body>
+
+</html>
